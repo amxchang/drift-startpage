@@ -1,0 +1,146 @@
+/* General */
+html {
+    height: 100%;
+}
+    
+body {
+        
+    background: rgb(9, 44, 56);
+    /*background: radial-gradient(circle, rgb(11, 51, 65) 0%, rgb(10, 36, 44) 85%); */
+    color: #FFFFFF;	
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    margin: 0;  
+}
+
+
+img {
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+}
+
+a {
+    color: #9cbdd3;	
+    text-decoration: none;
+}
+
+
+/* Time and Date */
+#time {
+    margin-top: 5.6rem;
+    font-size: 4.7rem;
+    margin-bottom: 0.17rem;
+}
+    
+#date {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+}
+
+
+/* Search Bar */
+.search-field, .search-submit {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 2rem;
+    position: relative;
+    background-color:white;
+    background-color: #1d3946;
+    width: 38.8%;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 1rem;
+    border: 2px solid rgb(4, 27, 36);
+    padding: 0.3rem;
+}
+    
+input {
+    text-align:center;
+    color: #FFFFFF;
+}
+
+/* Flexbox */
+
+* { box-sizing: border-box; }
+
+
+.wrapper {
+    padding-top:2.5rem;
+    display: flex;
+
+    padding-bottom:2.5rem;
+    max-width:40%;
+    justify-content: center;
+    margin:auto;  
+    white-space: nowrap;
+}
+    
+.category {
+    display: flex;
+    flex-direction: column;
+    margin:4px;
+    width: 16rem;
+    flex: 1; /*grow*/
+    /*background-color:#1d3946;*/
+    background-color: #14303d;
+    border-radius: 0.7rem;
+    /*border: 1.5px solid rgb(1, 22, 29);*/
+    border: 1.7px solid rgb(4, 27, 36);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    flex-basis: 33.33%
+    
+    
+    }
+     
+.flex {
+    display: flex;
+    flex-wrap: wrap; 
+}
+     
+.flex > * {
+    flex: 1 1 15rem;
+}
+
+@media (max-width: 1200px) { 
+    .wrapper{
+        max-width:60%;
+    }
+    
+    .category {
+        width: 50%;
+        flex-basis: 50%;
+    }
+
+    
+    
+    .search-field, .search-submit {
+        width: 42%
+    }
+   
+
+  }
+
+
+  @media (max-width: 900px) { 
+    .wrapper{
+        max-width:45%;
+    }
+   
+    .category {
+        width: 100%;
+    }
+
+    
+
+    .search-field, .search-submit {
+        width: 44%
+    }
+  }
+

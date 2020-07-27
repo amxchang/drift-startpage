@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!-- use image to link to a page with description and pictures and explanation of start page -->
+
+<!-- possibly: make startpage.html have the actual start page. make index.html be a page that has links to both pages-->
+
+<html>
+
+    <head>
+
+        <title>New Tab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="images/favicon.png?v=2" type="image/icon"/>
+
+    </head>
+    
+    <style>
+
+        html {
+            height: 100%;
+        }
+            
+        body {
+           
+            background: rgb(9, 44, 56);
+            color: #FFFFFF;	
+            text-align: center;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.05rem;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 4rem;
+        }
+
+        p {
+            text-align: left;
+            line-height: 1.4rem;
+        }
+
+        img {
+            display: inline-block;
+            margin-top: 2.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            bottom: 0rem;
+            left: 0;
+            right: 0;
+            border-radius: 0.7rem;
+            border: 1.7px solid rgb(1, 22, 29);
+        }
+
+        a {
+            color: #9cbdd3;	
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+        #drift-title a:hover{
+            color: #9cbdd3;
+        }
+
+        @media only screen and (max-width: 950px) {
+            
+            .imageresize {
+                width: 85%;    
+            }
+       
+
+        }
+
+    
+
+    </style>
+
+    <body>
+        <h1 id = "drift-title"><a href = "index.html" style="color:#FFFFFF;" >Drift</a></h1>
+        <p><a href = "index.html">Drift</a> was inspired by the ocean at night as well as my affinity for origami boats. 
+        The startpage's design shows a paper boat drifting in the dark, yet moonlit, ocean. 
+        The night aspect is also reflected in the favicon, which is a crescent moon.</p>
+        <p>I started off by thinking about color choices and inspiration. 
+        I settled on a deep teal background and a contrasting white for the text. 
+        My inspiration, as stated above, was an origami boat floating in the ocean at night.</p>
+        <p>Then, I browsed Google Fonts to pick out a sans serif font. 
+        I ended up choosing Varela Round because I liked the roundness. 
+        I also liked that the font looks playful at larger sizes but serious at smaller sizes. </p>       
+
+        <img src = "images/drawn.JPG" width = "45%" style = "margin: 2px;" class="imageresize" alt = "pencil version of design">
+        
+        <img src = "images/inked.JPG" width = "45%" style = "margin: 2px;"class="imageresize" alt = "outlined version of design">
+
+        <p>Next, I sketched out a general layout with pencil. 
+        I thought about what I personally wanted in a start page. 
+        So, I included the time, date, a search bar, and several links.  
+        After feeling satisfied, I outlined it with pen.</p>
+        <p>After that, I used Figma to create a mockup of my design.</p>
+        
+        <img src = "images/figma.png" width = "45%" style = "margin: 2px;"class="imageresize" alt = "figma version of design">
+ 
+        <p>Finally, I had the design done. 
+        I used Visual Studio Code to code the startpage. 
+        I used flexbox to make the links responsive. 
+        When the screen gets smaller, the three columns change into two columns and then one column. 
+        The transition when the columns change isn't the smoothest but it still works, since most people don't resize their browser too often. 
+        I also changed up the design a little bit by adding another link for each column and changing the color (and border) for each column. </p>
+        <p>I hope you enjoy <a href = "index.html">Drift</a>!</p>
+
+        <a href="index.html"><img src="images/paperboat.png" alt="paper boat icon" width = "75rem" id = "paperboat" alt="paper boat icon" style = "border: none; margin-bottom: 23px;"></a>
+     
+    </body>
+
+</html>
